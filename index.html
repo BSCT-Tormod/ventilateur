@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>QueLesVentilateurs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./logo.png" alt="logo">
+        <a href="#tendences">Catégories</a>
+        <button onclick="window.location='https:\/\/chat.ouipouet.tech';">Surprennez moi !</button>
+        <button onclick="window.location='https:\/\/ouipouet.tech';">Départementdle</button>
+    </header>
+    <div class="empty"></div>
+    <div class="section">
+        <h2>Vidéos pour vous</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://www.cdiscount.com/pdt2/2/3/6/1/700x700/inn8435527814236/rw/ventilateur-sur-pied-noir-oscillation-automatiqu.jpg" alt="miniature">
+                <p class="video-title">Je fais le ventilocopter pendant qu'elle bouquine !</p>
+                <div class="video-stats">
+                    <p class="video-views">1.3K 👁️</p>
+                    <p class="video-likes">92% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://le-specialiste-brumisation.com/362-thickbox_default/ventilateur-brumisateur-dinterieur-110cm.jpg" alt="miniature">
+                <p class="video-title">Il fait tellement chaud que je mouille !</p>
+                <div class="video-stats">
+                    <p class="video-views">126K 👁️</p>
+                    <p class="video-likes">90% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://www.festihome.com/img/cms/images-conseils/ventilateur-colonne-ou-sur-pied.jpg" alt="miniature">
+                <p class="video-title">Elle me supplie de lui souffler dessus</p>
+                <div class="video-stats">
+                    <p class="video-views">362K 👁️</p>
+                    <p class="video-likes">91% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://max.sudinfo.be/sites/default/files/styles/image_690x460/public/images/81936641_l_2.jpg?itok=PNSI9sud" alt="miniature">
+                <p class="video-title">Étape soeur enlève sa chemise devant moi</p>
+                <div class="video-stats">
+                    <p class="video-views">1.5M 👁️</p>
+                    <p class="video-likes">94% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="tendences">
+        <h2>Vidéos Tendences</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://c8.alamy.com/comp/B04BKA/electric-fans-on-a-conference-table-B04BKA.jpg" alt="miniature">
+                <p class="video-title">On s'amuse a 6</p>
+                <div class="video-stats">
+                    <p class="video-views">50K 👁️</p>
+                    <p class="video-likes">99% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqULVJKOLJ1Qj-hxbecKOKgjOu0bhgzY-Oq6-nlPhHDLinZdKZx6-ruYdO9zctTuvRWQI&usqp=CAU" alt="miniature">
+                <p class="video-title">Je me fais démonter dans le jardin</p>
+                <div class="video-stats">
+                    <p class="video-views">1.3K 👁️</p>
+                    <p class="video-likes">97% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="data:image/jpeg;base64,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" alt="miniature">
+                <p class="video-title">Mignon ventilateur fille anime</p>
+                <div class="video-stats">
+                    <p class="video-views">1.1M 👁️</p>
+                    <p class="video-likes">99% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://tech4gamers.com/wp-content/uploads/2022/09/cleaning-fan-blades-using-cotton-swab.jpg" alt="miniature">
+                <p class="video-title">Il passe son coton tige dans mes orifices</p>
+                <div class="video-stats">
+                    <p class="video-views">69K 👁️</p>
+                    <p class="video-likes">96% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="categories">
+        <h2>Catégories :</h2>
+        <a href="#categories">Amateur</a>
+        <a href="#amateur">Anime</a>
+        <a href="#anime">Chaud</a>
+        <a href="#chaud">Compilations</a>
+        <a href="#compilations">Emploi de main</a>
+        <a href="#main">Emploi de souffle</a>
+        <a href="#souffle">Gros Ventilateur Noir</a>
+        <a href="#gvn">Hardcore</a>
+        <a href="#hardcore">Mouille</a>
+        <a href="#mouille">Pieds</a>
+        <a href="#pieds">Solo</a>
+    </div>
+    <div class="section" id="amateur">
+        <h2>Amateur</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://i.redd.it/pcce5cwe43z21.jpg" alt="miniature">
+                <p class="video-title">Je rafraichis un inconnu</p>
+                <div class="video-stats">
+                    <p class="video-views">1.1M 👁️</p>
+                    <p class="video-likes">99% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://preview.redd.it/l6ee7cxz1ma61.jpg?auto=webp&s=ea8038a1e7427f067592afa0ca22005555da8ba9" alt="miniature">
+                <p class="video-title">"Ce plafond te vas si bien !"</p>
+                <div class="video-stats">
+                    <p class="video-views">15M 👁️</p>
+                    <p class="video-likes">97% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://m.media-amazon.com/images/I/71Adfexr3GL._UC256,256_CACC,256,256_.jpg" alt="miniature">
+                <p class="video-title">Petit plaisir sur la table de lit</p>
+                <div class="video-stats">
+                    <p class="video-views">3.2k 👁️</p>
+                    <p class="video-likes">79% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://target.scene7.com/is/image/Target/GUEST_909a3e44-9ade-41f2-be91-1054e62eb5be" alt="miniature">
+                <p class="video-title">VID-20170706-05.mp4</p>
+                <div class="video-stats">
+                    <p class="video-views">21K 👁️</p>
+                    <p class="video-likes">90% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="anime">
+        <h2>Anime</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="data:image/jpeg;base64,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" alt="miniature">
+                <p class="video-title">Lolita et le ventilateur S1 EP3 VF</p>
+                <div class="video-stats">
+                    <p class="video-views">140M 👁️</p>
+                    <p class="video-likes">98% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="data:image/jpeg;base64,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" alt="miniature">
+                <p class="video-title">Mignon ventilateur fille anime</p>
+                <div class="video-stats">
+                    <p class="video-views">21k 👁️</p>
+                    <p class="video-likes">99% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFgrRnIZXhvi8AsNHLVttNj4xNfNwDrfgVRu5nNVG3kzo7gL4NlsD1v1xmTckt2oASxpg&usqp=CAU" alt="miniature">
+                <p class="video-title">La quete de fraicheur S2 EP12</p>
+                <div class="video-stats">
+                    <p class="video-views">189K 👁️</p>
+                    <p class="video-likes">86% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://lohas.nicoseiga.jp/thumb/6921495i?1530882961" alt="miniature">
+                <p class="video-title">日本語で何か</p>
+                <div class="video-stats">
+                    <p class="video-views">52M 👁️</p>
+                    <p class="video-likes">95% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="chaud">
+        <h2>Chaud</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://st3.depositphotos.com/10614052/33256/i/450/depositphotos_332568972-stock-photo-young-woman-using-electric-fan.jpg" alt="miniature">
+                <p class="video-title">"S'il te plait étape ventilateur, encore une fois"</p>
+                <div class="video-stats">
+                    <p class="video-views">30K 👁️</p>
+                    <p class="video-likes">88% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://www.festihome.com/img/cms/images-conseils/ventilateur-colonne-ou-sur-pied.jpg" alt="miniature">
+                <p class="video-title">Elle me supplie de lui souffler dessus</p>
+                <div class="video-stats">
+                    <p class="video-views">362K 👁️</p>
+                    <p class="video-likes">91% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://max.sudinfo.be/sites/default/files/styles/image_690x460/public/images/81936641_l_2.jpg?itok=PNSI9sud" alt="miniature">
+                <p class="video-title">Étape soeur enlève sa chemise devant moi</p>
+                <div class="video-stats">
+                    <p class="video-views">1.5M 👁️</p>
+                    <p class="video-likes">94% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://media.istockphoto.com/id/1153578398/fr/photo/jeune-femme-appr%C3%A9ciant-le-vent-frais-du-ventilateur-%C3%A9lectrique.jpg?s=612x612&w=0&k=20&c=zAenBG3mpt4sL8yXUXr-DBdoFiUPCydY228Fjs3aXIQ=" alt="miniature">
+                <p class="video-title">"Viens me raffraichir, je suis tellement chaude !"</p>
+                <div class="video-stats">
+                    <p class="video-views"> 👁️</p>
+                    <p class="video-likes">% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="compilations">
+        <h2>Compilations</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://media.istockphoto.com/id/1003473486/photo/businessman-cooling-himself-with-electric-fan-while-using-laptop-in-office.jpg?s=612x612&w=0&k=20&c=PhZRongX3zc02GgCTWXq6ziyw8NfvEOn-5hYC94ke18=" alt="miniature">
+                <p class="video-title">Compilation de ventilateurs au bureau</p>
+                <div class="video-stats">
+                    <p class="video-views">83K 👁️</p>
+                    <p class="video-likes">98% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1RSei0mWfmJH_KFcvz-IntQ2z52YqvhSgUxNRpjiX9KnAIM10aa0j6U8RP9vJqQaVXgk&usqp=CAU" alt="miniature">
+                <p class="video-title">2 ventilateurs 1 homme compilation 3</p>
+                <div class="video-stats">
+                    <p class="video-views">1.3K 👁️</p>
+                    <p class="video-likes">85% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://c8.alamy.com/comp/2CAC9NT/girl-in-front-of-electric-fan-trying-to-refresh-herself-2CAC9NT.jpg" alt="miniature">
+                <p class="video-title">Femme qui a chaud compilation</p>
+                <div class="video-stats">
+                    <p class="video-views">53K 👁️</p>
+                    <p class="video-likes">98% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://c8.alamy.com/comp/2N0ANEB/office-employees-sitting-in-front-of-fan-at-workplace-summer-heat-2N0ANEB.jpg" alt="miniature">
+                <p class="video-title">Compilation ventileurs avec couple</p>
+                <div class="video-stats">
+                    <p class="video-views">1.8M 👁️</p>
+                    <p class="video-likes">84% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="main">
+        <h2>Emploi de main</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://www.pylones.com/56469-large_default/cadeau-design-eventail-lho.jpg" alt="miniature">
+                <p class="video-title">Emploi de main finit sur le visage</p>
+                <div class="video-stats">
+                    <p class="video-views">498K 👁️</p>
+                    <p class="video-likes">88% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://eventail-rouge.com/cdn/shop/products/eventailgeantblancbois_800x.jpg?v=1619529959" alt="miniature">
+                <p class="video-title">Emploi de main géant</p>
+                <div class="video-stats">
+                    <p class="video-views">164K 👁️</p>
+                    <p class="video-likes">75% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://www.laboutique12.com/170-home_default/eventail-putain-de-bouffees-de-chaleur.jpg" alt="miniature">
+                <p class="video-title">Empoi de main pour palier a la chaleur</p>
+                <div class="video-stats">
+                    <p class="video-views">45M 👁️</p>
+                    <p class="video-likes">98% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://jaivulavierge.com/cdn/shop/products/IMG_5058.jpg?v=1616162305&width=1946" alt="miniature">
+                <p class="video-title">Double emploi de main</p>
+                <div class="video-stats">
+                    <p class="video-views">8.0M 👁️</p>
+                    <p class="video-likes">80% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="souffle">
+        <h2>Emploi de souffle</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://www.thespruce.com/thmb/iLoTw9tN1wRMhBtyKiYZfl9Lqqw=/4043x0/filters:no_upscale():max_bytes(150000):strip_icc()/SPR_WORX40VTurbineCordlessLeafBlowerPowerSharewithBrushlessMotoratAmazon_RM_15_5107-c66a647ea0dc487f880b8d8b7be206ab.jpg" alt="miniature">
+                <p class="video-title">Gros tuyau pour emploi de souffle</p>
+                <div class="video-stats">
+                    <p class="video-views">804K 👁️</p>
+                    <p class="video-likes">90% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://people.com/thmb/TBnK0y2prsUa0W5udEDfIpGaQSk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PEO_GroupShot_RM_4999-3fadcf54def3475d9dc125ba5fe96067.jpg" alt="miniature">
+                <p class="video-title">4 Emplois de souffle pour le prix d'un !</p>
+                <div class="video-stats">
+                    <p class="video-views">39K 👁️</p>
+                    <p class="video-likes">85% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://www.momscleanairforce.org/wp-content/uploads/2022/10/leaf_blower.jpg" alt="miniature">
+                <p class="video-title">J'en met de partout dehors !</p>
+                <div class="video-stats">
+                    <p class="video-views">180K 👁️</p>
+                    <p class="video-likes">80% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://i.ytimg.com/vi/61y2yDqyUcw/maxresdefault.jpg" alt="miniature">
+                <p class="video-title">Elle debouche mon tuyau</p>
+                <div class="video-stats">
+                    <p class="video-views">280M 👁️</p>
+                    <p class="video-likes">79% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="gvn">
+        <h2>Gros Ventilateurs Noirs</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://www.portableairgroup.com/wp-content/uploads/2021/02/slider-2.jpg" alt="miniature">
+                <p class="video-title">GVN - Je visite son entrepot</p>
+                <div class="video-stats">
+                    <p class="video-views">89K 👁️</p>
+                    <p class="video-likes">78% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://www.portableairgroup.com/wp-content/uploads/2021/02/slider-1.jpg" alt="miniature">
+                <p class="video-title">Gros cul ventilateurs™ [GVN] s'exhibe au stade</p>
+                <div class="video-stats">
+                    <p class="video-views">343K 👁️</p>
+                    <p class="video-likes">90% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://s3-eu-west-1.amazonaws.com/specifiedbypro/5440/11518/big-ass-fans_BLACK-JACK_Images_Image116.jpg" alt="miniature">
+                <p class="video-title">Gros cul ventilateurs™ [GVN] en balade</p>
+                <div class="video-stats">
+                    <p class="video-views">2.8M 👁️</p>
+                    <p class="video-likes">86% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://www.portableairgroup.com/wp-content/uploads/2021/02/black-jack-spray-sq-PAG.jpg" alt="miniature">
+                <p class="video-title">GVN Il m'asperge de son liquide</p>
+                <div class="video-stats">
+                    <p class="video-views">68M 👁️</p>
+                    <p class="video-likes">99% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="hardcore">
+        <h2>Hardcore</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqULVJKOLJ1Qj-hxbecKOKgjOu0bhgzY-Oq6-nlPhHDLinZdKZx6-ruYdO9zctTuvRWQI&usqp=CAU" alt="miniature">
+                <p class="video-title">Je me fais démonter dans le jardin</p>
+                <div class="video-stats">
+                    <p class="video-views">1.3K 👁️</p>
+                    <p class="video-likes">97% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://c8.alamy.com/comp/B04BKA/electric-fans-on-a-conference-table-B04BKA.jpg" alt="miniature">
+                <p class="video-title">On s'amuse a 6</p>
+                <div class="video-stats">
+                    <p class="video-views">50K 👁️</p>
+                    <p class="video-likes">99% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHBrcK5e3K6v8MdoHxi0jxZoOWHrOAOdV3z-dhkZjoWv_YZr5TLoCW8PmVMoYHer2kFu4&usqp=CAU" alt="miniature">
+                <p class="video-title">Il m'eclate contre le mur</p>
+                <div class="video-stats">
+                    <p class="video-views">164K 👁️</p>
+                    <p class="video-likes">75% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnBL7RwXSjI0_B2ugOKeqHdHQ370hJvbKnyPB_rvHADcm_GzMe6b9N8wTr_iKrR673Tw&usqp=CAU" alt="miniature">
+                <p class="video-title">Nous sommes 3 rien que pour toi...</p>
+                <div class="video-stats">
+                    <p class="video-views">45M 👁️</p>
+                    <p class="video-likes">98% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="mouille">
+        <h2>Mouille</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://i.ebayimg.com/images/g/VckAAOSw3mxkGAjj/s-l1200.jpg" alt="miniature">
+                <p class="video-title">Je lui asperge son visage !</p>
+                <div class="video-stats">
+                    <p class="video-views">804K 👁️</p>
+                    <p class="video-likes">90% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://le-specialiste-brumisation.com/362-thickbox_default/ventilateur-brumisateur-dinterieur-110cm.jpg" alt="miniature">
+                <p class="video-title">Il fait tellement chaud que je mouille !</p>
+                <div class="video-stats">
+                    <p class="video-views">126K 👁️</p>
+                    <p class="video-likes">90% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://www.rueducommerce.fr/media/produits/innovagoods/ventilateur-brumisateur-sur-pied-avec-commande-a-distance-innovagoods--40-cm-70w-9657816-25046102_102_1200x1200.jpg" alt="miniature">
+                <p class="video-title">Je la rends si heureuse</p>
+                <div class="video-stats">
+                    <p class="video-views">180K 👁️</p>
+                    <p class="video-likes">80% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://decoboutik.com/699920-medium_default/ventilateur-brumisateur-sur-pied-brissa-innovagoods-reconditionne-c.jpg" alt="miniature">
+                <p class="video-title">Je la mouille dans son lit</p>
+                <div class="video-stats">
+                    <p class="video-views">280M 👁️</p>
+                    <p class="video-likes">79% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="pieds">
+        <h2>Pieds</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://img.bricoleurdudimanche.com/IMG/jpg/1480271262.jpg" alt="miniature">
+                <p class="video-title">Gros plans sur mes pieds</p>
+                <div class="video-stats">
+                    <p class="video-views">89K 👁️</p>
+                    <p class="video-likes">78% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AsAdMCOzKGWkfzmekaWKq2JabwBQRfg4_ksP1zdmc8kZqVdsl1DhIo6ykGRhaaduCFE&usqp=CAU" alt="miniature">
+                <p class="video-title">Pieds de ventilateurs dénudés</p>
+                <div class="video-stats">
+                    <p class="video-views">343K 👁️</p>
+                    <p class="video-likes">90% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://www.tristar.eu/product/image/medium/xx-5893130-2023_0.jpg" alt="miniature">
+                <p class="video-title">"Juste un pied s'il te plait"</p>
+                <div class="video-stats">
+                    <p class="video-views">2.8M 👁️</p>
+                    <p class="video-likes">86% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://cdn.create-store.com/fr/wk/2173294/air-stand-wood-ventilateur-a-pied-pivotant-de-style-retro-50-w.jpg?cf-resize=gallery" alt="miniature">
+                <p class="video-title">Mon pied et ses courbes</p>
+                <div class="video-stats">
+                    <p class="video-views">68M 👁️</p>
+                    <p class="video-likes">99% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="solo">
+        <h2>Solo</h2>
+        <div class="video-container">
+            <div class="video">
+                <img src="https://www.my-ledcenter.com/7975-large_default/lampe-ventilateur-de-plafond-cct-selectionnable-natural-color.jpg" alt="miniature">
+                <p class="video-title">Je tourne, tourne !</p>
+                <div class="video-stats">
+                    <p class="video-views">498K 👁️</p>
+                    <p class="video-likes">88% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://www.maison-travaux.fr/wp-content/uploads/sites/8/2022/04/sans-titre-2022-04-28t180254.686.png" alt="miniature">
+                <p class="video-title">J'ai la maison rien que pour moi !</p>
+                <div class="video-stats">
+                    <p class="video-views">164K 👁️</p>
+                    <p class="video-likes">75% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://fac.img.pmdstatic.net/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Ffac.2F2022.2F06.2F29.2F73e87993-aa18-41f4-810a-f3ffd0b913ed.2Ejpeg/1200x900/quality/80/crop-from/center/comment-positionner-son-ventilateur-pour-rafraichir-la-piece.jpeg" alt="miniature">
+                <p class="video-title">Je fais des bétises dans la chambre de étape maman</p>
+                <div class="video-stats">
+                    <p class="video-views">45M 👁️</p>
+                    <p class="video-likes">98% ❤️</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://s3-assets-sowee-prod.s3.eu-west-1.amazonaws.com/wp-content/uploads/2020/09/03181647/090920_Blog_ConsoVentilation_730x390.jpg" alt="miniature">
+                <p class="video-title">Mes rubans volent dans tous les sens</p>
+                <div class="video-stats">
+                    <p class="video-views">8.0M 👁️</p>
+                    <p class="video-likes">80% ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

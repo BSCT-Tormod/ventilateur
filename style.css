@@ -1,0 +1,131 @@
+body{
+    background-color: #00AFF0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.empty{
+    height: 150px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #47CEFF;
+    padding: 20px 10px;
+    box-shadow: 0px 7px 0px #0076a1;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header img{
+    height: 100px;
+}
+
+button, a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #00AFF0;    
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px #00AFF0;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    text-decoration: none;
+}
+
+button:hover, a:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0px #00AFF0;
+}
+
+button:active, a:active{
+    transform: translate(0px, 0px);
+    box-shadow: 5px 5px 0px #00AFF0;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-color: #47CEFF;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #0076a1;
+}
+
+.section h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-self: start !important;
+    background-color: #00AFF0;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.video:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0px #0076a1;
+    cursor: pointer;
+}
+
+.video img{
+    width: 353px;
+    height: 198px;
+}
+
+.video p{
+    font-size: 20px;
+    font-weight: 700;
+    width: 353px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.video-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 10px;
+    gap: 10px;
+}
+
+#categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
